@@ -1,0 +1,55 @@
+{
+  "name": "@helloworldstudio/material-theme",
+  "version": "0.4.0",
+  "description": "Hello World Studio's Material 3 Expressive theme system for React Native: generated colour schemes, type scale with any fonts, motion and shape tokens, and themed components with pluggable icons.",
+  "private": true,
+  "license": "MIT",
+  "author": "Hello World Studio LLC",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "react-native": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./mdi": "./src/mdi/index.tsx",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "release": "npm run typecheck && mkdir -p releases && npm pack --pack-destination releases"
+  },
+  "dependencies": {
+    "@material/material-color-utilities": "^0.4.0"
+  },
+  "peerDependencies": {
+    "@react-native-vector-icons/material-design-icons": ">=12",
+    "react": ">=19",
+    "react-native": ">=0.79",
+    "react-native-reanimated": ">=4",
+    "react-native-safe-area-context": ">=5",
+    "react-native-svg": ">=15",
+    "react-native-worklets": ">=0.5"
+  },
+  "peerDependenciesMeta": {
+    "@react-native-vector-icons/material-design-icons": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@react-native-vector-icons/material-design-icons": "^13.1.2",
+    "@react-native/typescript-config": "0.85.3",
+    "@types/react": "^19.2.15",
+    "react": "19.2.3",
+    "react-native": "0.85.3",
+    "react-native-reanimated": "~4.6.0",
+    "react-native-safe-area-context": "^5.8.0",
+    "react-native-svg": "^15.16.1",
+    "react-native-worklets": "^0.12.2",
+    "typescript": "^6.0.3"
+  }
+}
